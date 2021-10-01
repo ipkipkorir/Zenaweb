@@ -1,0 +1,62 @@
+<script src=""></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+
+</head>
+<body>
+	<main id="main">
+		<header >
+			<h1 id="title">
+				Survey Form
+			</h1>
+			<p id="description">
+				Fill out the form below
+			</p>
+		</header>
+		<form id="survey-form" style="">
+			<label id="name-label">Name:</label>
+			<input type="text" name="name" id="name" placeholder="Enter your full name" required>
+			<label id="email-label">Email:</label>
+			<input type="email" name="email" id="email" placeholder="Enter your email" required>
+			<label id="number-label">Age:</label>
+			<input type="Number" name="number" id="number" min="16" max="100" placeholder="Enter your age" required>
+			<!--Select option -->
+			<p>Which is your home country?</p>
+				<select id="dropdown">
+					<option>Kenya</option>
+					<option>Great Britain</option>
+					<option>USA</option>
+					<option>South Africa</option>
+					<option>Canada</option>
+				</select>
+			
+			<!-- Choose radio/option -->
+			<fieldset><legend>Which is your favourite sport?</legend>
+				<input type="radio" name="name" value="Soccer" checked>Soccer <br>
+				<input type="radio" name="name" value="Athletics">Athletics<br>
+				<input type="radio" name="name" value="Other">Other<br><br>
+			</fieldset>
+			<!-- Choose from checkbox -->
+			<fieldset><legend>Which cities would you live in?</legend>
+				<input type="checkbox" name="checkbox" value="London">London, UK <br>
+				<input type="checkbox" name="checkbox" value="Nairobi">Nairobi, Kenya<br>
+				<input type="checkbox" name="checkbox" value="Warsaw">Warsaw, Poland<br>
+				<input type="checkbox" name="checkbox" value="Sidney">Sidney, Australia<br>
+				<input type="checkbox" name="checkbox" value="Windhok">Windhok, Namibia<br>
+				<input type="checkbox" name="checkbox" value="New York">New York, USA<br>
+			</fieldset>
+			<!-- Textarea for comments -->
+			<p>Do you have any comments?</p>
+			<textarea id="comments" class="input-textarea" name="comment"> Enter your comments here ...
+			</textarea>
+			<!-- Submit button-->
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
